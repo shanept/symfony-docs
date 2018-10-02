@@ -157,8 +157,8 @@ method to update multiple attributes at once::
 
     // Adding multiple email adresses at once
     $entryManager->applyOperations($entry->getDn(), array(
-        new UpdateOpteration(LDAP_MODIFY_BATCH_ADD, 'mail', 'new1@example.com'),
-        new UpdateOpteration(LDAP_MODIFY_BATCH_ADD, 'mail', 'new2@example.com'),
+        new UpdateOperation(LDAP_MODIFY_BATCH_ADD, 'mail', 'new1@example.com'),
+        new UpdateOperation(LDAP_MODIFY_BATCH_ADD, 'mail', 'new2@example.com'),
     ));
 
 Possible operation types are ``LDAP_MODIFY_BATCH_ADD``, ``LDAP_MODIFY_BATCH_REMOVE``,
